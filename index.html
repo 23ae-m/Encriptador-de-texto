@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <img class="header__logo" src="./assets/LogoAlura.png" alt="Foto del Logo de alura">
+        </div>
+    </header>
+    <main>
+        <div class="main">
+            <div class="left">
+                <textarea id="ingresoTexto" class="ingreso__texto"
+                placeholder="Ingrese texto aquí"></textarea>
+
+                <div class="left__footer">
+                    <img src="./assets/bi_exclamation-circle-fill.png" alt="Logo de exclamación">
+                    <span class="left__info">Solo letras minúsculas y sin acentos</span>
+                    <div class="left__botones">
+                        <button id="botonEncriptar" class="boton__encriptar">Encriptar</button>
+                        <button id="botonDesencriptar" class="boton__desencriptar">Desencriptar</button>
+                    </div>
+                </div>
+            </div>
+            <div id="right" class="right">
+                <img id="muñeco" class="muñeco" src="./assets/Muñeco.png" alt="muñeco viendo un diamante con una lupa">
+                <textarea id="mensajeFinal" class="mensaje__final" placeholder="Ningún mensaje fue encontrado"></textarea>
+                <p id="rightInfo" class="right__info">Ingresa el texto que desees encriptar o desencriptar.</p>
+                <button id="botonCopiar" class="boton__copiar oculto">Copiar</button>
+            </div>
+        </div>
+    </main>
+    <!--<footer>
+
+    </footer>
+    -->
+    <script src="./app/app.js"></script>
+</body>
+</html>
